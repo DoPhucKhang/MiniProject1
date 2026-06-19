@@ -4,8 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mini-project 1: Trang HTML chuẩn đầu tiên</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<-- Header --> <header> <h1>Mini-project 1: Trang HTML chuẩn đầu tiên</h1> <p>Tìm hiểu cấu trúc cơ bản của tài liệu HTML.</p> </header> <main> <section> <h2>DOCTYPE là gì?</h2> <p> <!DOCTYPE html> dùng để khai báo tài liệu HTML5, giúp trình duyệt hiển thị đúng theo tiêu chuẩn hiện đại. </p> </section> <section> <h2>Thẻ html</h2> <p> Thẻ html là phần tử gốc, bao bọc toàn bộ tài liệu HTML. </p> </section> <section> <h2>Thẻ head</h2> <p> Chứa các thông tin cấu hình như title, meta và liên kết CSS. </p> </section> <section> <h2>Thẻ body</h2> <p> Chứa toàn bộ nội dung hiển thị cho người dùng. </p> </section> <section> <h2>Thiết kế giao diện</h2> <img src="assets/ui-design.png" alt="Ảnh thiết kế giao diện"> <p>Ảnh chụp thiết kế UI của dự án.</p> </section> </main> <footer> <p>Mini-project 1 - Thiết kế Web</p> </footer> <script src="js/script.js"></script>
+  <header>
+    <h1>Hệ thống học tập HTML Standard</h1>
+    <p>Trang web phác thảo cấu trúc bài học đầu tiên</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#ly-thuyet">Lý thuyết cốt lõi</a></li>
+      <li><a href="#lo-trinh">Lộ trình học</a></li>
+      <li><a href="#dang-ky">Đăng ký tư vấn</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>MAIN CONTENT</h2>
+    <div class="section-container">
+      <section id="ly-thuyet">
+        <h3>SECTION: Ảnh UI / Lý thuyết</h3>
+        <p>Cấu trúc cốt lõi bao gồm: DOCTYPE, html, head, body.</p>
+        <img src="assets/ui-sketch.png" alt="Ảnh phác thảo giao diện UI học tập">
+      </section>
+      <section id="dang-ky">
+        <h3>SECTION: Bảng dữ liệu & Form</h3>
+        <table>
+          <thead>
+            <tr><th>Nhóm phần tử</th><th>Mô tả vai trò</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Bố cục Semantic</td><td>Phân vùng nội dung rõ ràng, tối ưu SEO.</td></tr>
+          </tbody>
+        </table>
+        <form action="#" method="POST" style="margin-top: 15px;">
+          <div>
+            <label for="txtName">Tên học viên:</label>
+            <input type="text" id="txtName" name="student_name" required>
+          </div>
+          <div>
+            <label for="txtEmail">Địa chỉ Email:</label>
+            <input type="email" id="txtEmail" name="student_email" required>
+          </div>
+          <button type="submit">Đăng ký ngay</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>FOOTER: &copy; 2026 - Đỗ Phúc Khang</p>
+  </footer>
 </body>
 </html>
